@@ -45,20 +45,14 @@
         
         
             <nav  class="col-xs-12 col-sm-3 menu">
-                            <ul>
+                                          <div class="card" style="width: 20rem;">
+  <ul class="list-group list-group-flush">
                     {{ base.html_navigation_links() }}
                     {{ template_hooks['menu']() }}
                 </ul>
             
-                    <div class="card" style="width: 20rem;">
-  <ul class="list-group list-group-flush">
-                    {% block belowtitle %}
-                    {% if translations|length > 1 %}  
-    <li class="list-group-item">{{ base.html_translations() }}</li>
-                    {% endif %}
-                    {% endblock %}
-                    {{ template_hooks['menu_alt']() }}
-  </ul>
+
+
 </div>
             
             
