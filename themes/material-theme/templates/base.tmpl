@@ -41,29 +41,30 @@
 <div class="container-fluid main" id="content" role="main">
         <div class="row">
         
-        <div class="card" style="width: 20rem;">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-</div>
+
         
         
             <nav  class="col-xs-12 col-sm-3 menu">
-                <ul>
+                            <ul>
                     {{ base.html_navigation_links() }}
                     {{ template_hooks['menu']() }}
                 </ul>
-
-                <ul>
+            
+                    <div class="card" style="width: 20rem;">
+  <ul class="list-group list-group-flush">
                     {% block belowtitle %}
-                    {% if translations|length > 1 %}
-                        <li>{{ base.html_translations() }}</li>
+                    {% if translations|length > 1 %}  
+    <li class="list-group-item">{{ base.html_translations() }}</li>
                     {% endif %}
                     {% endblock %}
                     {{ template_hooks['menu_alt']() }}
-                </ul>
+  </ul>
+</div>
+            
+            
+
+
+
             </nav>
 
             {{ template_hooks['page_header']() }}
