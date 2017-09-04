@@ -92,8 +92,6 @@ lang="{{ lang }}">
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-            <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDAyYzRmOTktMzQ3Ni00NjY1LWI3OTctOWRjMjFlYzE5NDk2NjM2Mzc4MDgwNjAzMTAzMTYw"></script>
-
 
             <script src="/assets/js/all.js"></script>
         {% else %}
@@ -103,7 +101,7 @@ lang="{{ lang }}">
         {% if use_cdn %}
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-            <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDAyYzRmOTktMzQ3Ni00NjY1LWI3OTctOWRjMjFlYzE5NDk2NjM2Mzc4MDgwNjAzMTAzMTYw"></script>
+            
         {% else %}
             <script src="/assets/js/jquery.min.js"></script>
             <script src="/assets/js/bootstrap.min.js"></script>
@@ -118,6 +116,7 @@ lang="{{ lang }}">
     {% if colorbox_locales[lang] %}
         <script src="/assets/js/colorbox-i18n/jquery.colorbox-{{ colorbox_locales[lang] }}.js"></script>
     {% endif %}
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDAyYzRmOTktMzQ3Ni00NjY1LWI3OTctOWRjMjFlYzE5NDk2NjM2Mzc4MDgwNjAzMTAzMTYw"></script>
     {{ social_buttons_code }}
         <script>
             {% if social_links %}
@@ -173,11 +172,12 @@ lang="{{ lang }}">
         {% if use_cdn %}
             <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-            <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+ 
         {% else %}
             <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
             <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         {% endif %}
+           <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />        
         <link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/code.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
